@@ -15,6 +15,8 @@
     <meta name="language" content="English">
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 
+    <!--these control how the website shows up on facebook/twitter etc DO NOT DELETE-->
+    <!--TODO MAYBE UPDATE THESE-->
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hackathon.comssa.org.au/">
@@ -155,7 +157,9 @@
         text-transform: uppercase;
         border-radius: 0;
     }
-    .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+    /*TO disable register button:*/
+    /*.btn-primary, .btn-primary.disabled, .btn-primary:disabled {*/
+    .btn-primary{
         background-color: var(--primary);
         border-color: var(--primary);
         color: var(--primary-c);
@@ -439,14 +443,21 @@
                         solve an exciting real-world challenge, and share your solutions with the tech community. Prize pool of $4500 up for grabs!</p>
                 </div>
                 
-                <!-- Registration -->
+                <!-- Registration button - can still register -->
                 <div id="registration-button" class="text-center">
-                    <a href="/register" class="btn btn-primary btn-lg rounded-pill disabled" role="button" aria-pressed="true">
-                        <span class="mx-4 fw-600">Event Ended</span>
+                    <a href="/register" class="btn btn-primary btn-lg rounded-pill" role="button" aria-pressed="true">
+                        <span class="mx-4 fw-600">Register now</span>
                     </a>
                 </div>
 
-                <p class="montserrat">Join our <a href="https://discord.gg/RMVBA5c62f" class="fbLink">Discord Server</a> for questions and keeping up to date!</p>
+                <!-- Registration - event over and disabled -->
+                <!-- <div id="registration-button" class="text-center">
+                    <a href="/register" class="btn btn-primary btn-lg rounded-pill disabled" role="button" aria-pressed="true">
+                        <span class="mx-4 fw-600">Event Ended</span>
+                    </a>
+                </div> -->
+
+                <p class="montserrat">Join our <a href="https://discord.gg/ZGZcn6hcpF" class="fbLink">Discord Server</a> for questions and keeping up to date!</p>
 
             </div>
             
@@ -890,7 +901,7 @@
                     <p class="text-left mr-md-2">Join our Hackathon Discord for any further questions <br>or to find a team.</br></p>
                     <br></br>
                     <a class="btn btn-primary btn-lg rounded-pill d-flex align-items-center justify-content-center mx-4"
-                        href="https://discord.gg/RMVBA5c62f" target="_blank" rel="noopener">
+                        href="https://discord.gg/ZGZcn6hcpF" target="_blank" rel="noopener">
                         <span class="fw-600">Join Here!</span>
                     </a>
                 </div>
@@ -904,7 +915,7 @@
             </div>
         </div>
         
-        <!-- <p class="montserrat mt-3">Join our <a href="https://discord.gg/RMVBA5c62f" class="fbLink">Discord Server</a> for any further questions/finding team members.</p> -->
+        <!-- <p class="montserrat mt-3">Join our <a href="https://discord.gg/ZGZcn6hcpF" class="fbLink">Discord Server</a> for any further questions/finding team members.</p> -->
     
         <!-- Sponsor? -->
         <div class="col-12 mt-3">
@@ -957,10 +968,10 @@
         let speed = 1.5;
         let percent = 1;
         let intervalAnim, intervalTimer;
-        const startTime = 1720742400000
+        const startTime = 1764086400000 // when hackathon actually starts
         // new Date("2024 July 12 08:00:00").getTime(); precomputed
         // const startTime = 1665878400000 new Date("2024 July 14 08:00:00").getTime(); precomputed
-        const startWeb = 1714003200000
+        const startWeb = 1752940800000 // time we start counting from (when website released)
 
         document.addEventListener("DOMContentLoaded", function() {
             initProgress();
