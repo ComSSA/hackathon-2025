@@ -106,7 +106,8 @@
         --c9: #2f1244; */
 
         
-        --c1: #FFB001;
+        /* 2024 theme
+        /* --c1: #FFB001;
         --c2: #2F1244;
         --c3: #D80140;
         --c4: #171F69;
@@ -119,7 +120,28 @@
         --primary-c: #000000;
         --highlight: #d80140;
         --bs-font-sans-serif: 'Pattanakarn', sans-serif;
-        --font-primary: 'Montserrat', sans-serif;
+        --font-primary: 'Montserrat', sans-serif; */
+
+        
+        /*--c1: #a0caf1;
+        --c2: #628F50;
+        --c3: #cdc448;
+        --c4: #5e8491; */
+
+        --c1: #a0caf1;
+        --c2: #628F50;
+        --c3: #cdc448;
+        --c4: #5e8491;
+
+        --font-color: #fff;
+        --background: #628F50;
+        --background-rgb: 57,78,48;
+        --primary: #a0caf1;
+        --primary-h: #5e8491;
+        --primary-c: #000000;
+        --highlight: #cdc448;
+        --bs-font-sans-serif: 'Pattanakarn', sans-serif;
+        --font-primary: 'Montserrat', sans-serif; 
     }
 
     /* =================== Global =================== */
@@ -145,7 +167,7 @@
 
     .welcome-text {
         font-size: clamp(0.5rem, 5vw, 3rem);
-        text-shadow: rgb(240 78 35 / 69%) 3px 3px 0px;
+        text-shadow: rgb(94 132 145) 3px 3px 0px;
         text-transform: uppercase;
         font-family: 'Pattanakarn Bold', sans-serif;
     }
@@ -347,17 +369,17 @@
 
     /* Background image at top of the page */
     .bg-image {
-        background: linear-gradient( rgba(var(--background-rgb), 0.33) 0%, rgba(var(--background-rgb), 0.33) 80%, rgba(var(--background-rgb), 1)) 100%, url(https://res.cloudinary.com/dec6mijn3/image/upload/v1714031213/Hackathon/hackathon2024/background_photo.webp);
+        background: linear-gradient( rgba(var(--background-rgb), 0.33) 0%, rgba(var(--background-rgb), 0.33) 80%, rgba(var(--background-rgb), 1)) 100%, url(https://res.cloudinary.com/dec6mijn3/image/upload/v1755522536/Hackathon/hackathon2025/Background_dynrtn.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         z-index: 1;
-        opacity: 0.5;
+        opacity: 0.80;
     }
     .home-content {
         z-index: 2;
@@ -372,8 +394,9 @@
         max-width: 150px;
         width: clamp(125px, calc(100px + 5vw), 225px);
     }
+    /*main-image is actually the hackathon logo*/
     .main-image {
-        max-height: 200px;
+        max-height: 300px;
         width: clamp(100px, 60vw, 600px);
         max-width: 600px;
     }
@@ -418,7 +441,7 @@
         <div class="d-flex flex-column text-center">
             <div class="col-12 my-3"><div class="d-flex flex-column">
                 <div id="header" class="d-flex justify-content-center">
-                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1714036365/Hackathon/hackathon2024/Hackathon_initial_marketing_poster_iczlj1.webp" class="mx-4 main-image" alt="ComSSA Hackathon 2023">
+                    <img src="https://res.cloudinary.com/dec6mijn3/image/upload/v1755523436/Hackathon/hackathon2025/Hackathon_logo_iuwyox.png" class="mx-4 main-image" alt="ComSSA Hackathon 2025 Logo" style="filter: drop-shadow(0 6px 24px rgb(255, 255, 255));">
                 </div>
             </div>
         </div>
@@ -427,7 +450,7 @@
         <div class="d-flex flex-column flex-lg-row text-left">
             <div class="col-12 col-lg-6 mt-3 mb-5">
                 <!-- Welcome text -->
-                <h1 class="welcome-text">Earth's Ultimatum</h1>
+                <h1 class="welcome-text">GREEN GREEN GREEN</h1>
 
                 <div class="d-flex justify-content-center mt-1 mb-4">
                     <div class="hl"></div>
@@ -444,18 +467,18 @@
                 </div>
                 
                 <!-- Registration button - can still register -->
-                <div id="registration-button" class="text-center">
+                <!--div id="registration-button" class="text-center">
                     <a href="/register" class="btn btn-primary btn-lg rounded-pill" role="button" aria-pressed="true">
                         <span class="mx-4 fw-600">Register now</span>
                     </a>
-                </div>
+                </div> -->
 
                 <!-- Registration - event over and disabled -->
-                <!-- <div id="registration-button" class="text-center">
+                <div id="registration-button" class="text-center">
                     <a href="/register" class="btn btn-primary btn-lg rounded-pill disabled" role="button" aria-pressed="true">
-                        <span class="mx-4 fw-600">Event Ended</span>
+                        <span class="mx-4 fw-600">Registrations Opening Soon!</span>
                     </a>
-                </div> -->
+                </div>
 
                 <p class="montserrat">Join our <a href="https://discord.gg/ZGZcn6hcpF" class="fbLink">Discord Server</a> for questions and keeping up to date!</p>
 
